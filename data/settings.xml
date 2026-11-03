@@ -1,0 +1,27 @@
+<?xml version="1.1" ?>
+<settings>
+    <global>
+        <chat_logroe>false</chat_logroe>
+        <pos>
+            <x>50</x>
+            <y>80</y>
+        </pos>
+        <showcompleted>false</showcompleted>
+        <showexcluded>false</showexcluded>
+        <ui_scale>1</ui_scale>
+        <visibility>true</visibility>
+    </global>
+    <shunryu>
+        <pos>
+            <x>1103.9243164062</x>
+            <y>504.14083862305</y>
+        </pos>
+    </shunryu>
+    <shyryu>
+        <pos>
+            <x>806.29614257812</x>
+            <y>194.65185546875</y>
+        </pos>
+        <visibility>false</visibility>
+    </shyryu>
+</settings>
