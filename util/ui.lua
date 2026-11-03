@@ -624,7 +624,14 @@ windower.register_event('prerender', function()
 	end
 end)
 
-ui.menu:register_event('drag', function()
+-- Keep the saved window position in sync while the menu is dragged.
+-- draw() uses trackermenusettings.pos, so it must be updated immediately.
+ui.menu:draggable(true)
+ui.menu:register_event('drag', function(x, y)
+	trackermenusettings.pos.x = x
+	trackermenusettings.pos.y = y
+	trackermenusettings:save()
+
 	subtabs_drawn = false
 	draw_tabs()
 	draw_subtabs()
